@@ -1,4 +1,4 @@
-const mongoose = require('require')
+const mongoose = require('mongoose')
 
 const UserSchema = new mongoose.Schema({
   name: {
@@ -14,7 +14,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  avatar {
+  avatar: {
     type: String
   },
   date: {
