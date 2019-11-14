@@ -1,19 +1,20 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Landing = () => {
   return (
     <div>
       <section className="landing">
-        <div className="dark-overlay">
+        <div className="overlay">
           <div className="landing-inner">
             <h1 className="x-large">Busy Bee</h1>
             <p className="lead">
               Create a profile and get BUSY! People all over Mongolia are looking
-              for people to help them with their projects.  
+              for people to help them with their projects.
             </p>
             <div className="buttons">
-              <a href="register.html" className="btn btn-primary">Sign Up</a>
-              <a href="login.html" className="btn btn-light">Login</a>
+              <Link to="/register" className="btn sign-up">Sign Up</Link>
+              <Link to="/login" className="btn login">Login</Link>
             </div>
           </div>
         </div>
