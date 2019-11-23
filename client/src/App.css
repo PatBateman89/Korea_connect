@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
 /* Global Styles */
 :root {
   --primary-color: #17a2b8;
@@ -7,10 +7,6 @@
   --light-color: #f4f4f4;
   --danger-color: #dc3545;
   --success-color: #28a745;
-  --blueberry-color: #9068be;
-  --apricot-color: #F7882F;
-  --citrus-color: #F7C331;
-  --apple-core-color: #DCC7AA;
 }
 
 * {
@@ -52,8 +48,6 @@ img {
 
 /* Text Styles*/
 .x-large {
-  font-family: 'Raleway', sans-serif;
-  color: #F7882F;
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -66,8 +60,7 @@ img {
 }
 
 .lead {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -137,21 +130,15 @@ img {
 
 .btn {
   display: inline-block;
-  background-color: white;
-  border: 2px solid #4CAF50;
+  background: var(--light-color);
   color: #333;
   padding: 0.4rem 1.3rem;
   font-size: 1rem;
-  border-radius: 7px;
+  border: none;
   cursor: pointer;
   margin-right: 0.5rem;
-  transition: 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
   outline: none;
-}
-
-.btn:hover {
-  background-color: #4CAF50;
-  color: white;
 }
 
 .badge {
@@ -169,14 +156,6 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
-}
-
-.btn-blueberry,
-.bg-blueberry,
-.badge-blueberry,
-.alert-blueberry {
-  background: var(--blueberry-color);
-  color: #fff;
 }
 
 .btn-primary,
@@ -248,7 +227,8 @@ img {
 }
 
 /* Overlay */
-.overlay {
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -322,7 +302,6 @@ button {
 
 /* Navbar */
 .navbar {
-  font-family: 'Bebas Neue', Arial;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -333,7 +312,6 @@ button {
   top: 0;
   border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
-  font-size: 1.4rem;
 }
 
 .navbar ul {
@@ -347,7 +325,7 @@ button {
 }
 
 .navbar a:hover {
-  color: #e1e8f0
+  color: var(--primary-color);
 }
 
 .navbar .welcome span {
@@ -362,6 +340,7 @@ button {
 }
 
 .landing-inner {
+  color: #fff;
   height: 100%;
   width: 80%;
   margin: auto;
@@ -524,12 +503,10 @@ button {
   /* Text Styles */
   .x-large {
     font-size: 3rem;
-    color: #F7882F;
   }
 
   .large {
     font-size: 2rem;
-    color: #F7882F;
   }
 
   .lead {
